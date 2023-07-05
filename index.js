@@ -43,7 +43,7 @@ function FindCombinations(arr, target) {
      let combinations = []; // Array to store all possible combinations 
      let current = [];
      
-     // function to Generate all possible combinations whose sum is doubleTarget
+     // This function to Generate all possible combinations whose sum is doubleTarget
      AllPossibleSet(0,0,mergedArray,combinations,current,doubleTarget)
 
   return { pairs, mergedArray, combinations };
@@ -116,7 +116,7 @@ console.log(`Second Combination For ${target * 2}:`, combinations);
 //      // this function to Generate all pairs whose sum is target
 //      let pairs = AllPossiblePairs(arr,target);
      
-//      // merging all the pairs of combinations
+//      //Sorting and  merging all the pairs of combinations
 //      let mergedArray  = pairs.flat().sort((a, b) => a - b);
      
 //      // Doubling the target value
@@ -124,7 +124,7 @@ console.log(`Second Combination For ${target * 2}:`, combinations);
 //      let combinations = []; // Array to store all possible combinations 
 //      let current = [];
      
-//      // function to Generate all possible combinations whose sum is doubleTarget
+//      //This function to Generate all possible combinations whose sum is doubleTarget
 //      AllPossibleSet(0,0,mergedArray,combinations,current,doubleTarget)
 
 //   return { pairs, mergedArray, combinations };
@@ -134,7 +134,7 @@ console.log(`Second Combination For ${target * 2}:`, combinations);
 // const arr = [1, 3, 2, 2, -4, -6, -2, 8];
 // const target = 4;
 
-// // Find pairs and merge the array
+// // Find pairs, sort and merge the array
 // const { pairs, mergedArray, combinations } = FindCombinations(arr, target);
 
 // console.log(`First Combination For ${target}:`, pairs);
