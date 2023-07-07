@@ -1,6 +1,6 @@
 // UNIBIT GAMES ASSIGNMENT
 // It's a recursive function to Generate all possible combination of doubleTarget
-function AllPossibleSet(id,sum,mergedArray,combinations,current,doubleTarget){
+function AllPossibleSet(id,sum,mergedArray,combinations,current,doubleTarget){ //time complexity o(2^n)
     if(id===mergedArray.length){
         if(sum===doubleTarget){
             combinations.push([...current]);
@@ -16,7 +16,7 @@ function AllPossibleSet(id,sum,mergedArray,combinations,current,doubleTarget){
 }
 
 // This function to Generate all pairs whose sum is target
-function AllPossiblePairs(arr,target){
+function AllPossiblePairs(arr,target){ //time complexity o(n)
      let pairs = [];
      let alreadyVisited = new Set();
      for(let i = 0; i<arr.length; i++){
@@ -30,7 +30,7 @@ function AllPossiblePairs(arr,target){
 }
 
 //It's a  main function to call both the functions like AllPossiblePairs and AllPossibleSet
-function FindCombinations(arr, target) {
+function FindCombinations(arr, target) { //time complexity o(2^n)
     
      // this function to Generate all pairs whose sum is target
      let pairs = AllPossiblePairs(arr,target);
